@@ -55,6 +55,9 @@ nav a:hover {
     color: #5F93E3;
 }
 
+.active {
+    background-color: #04AA6D;
+  }
 .search-bar input {
     padding: 5px 10px;
     border: 1px solid #ccc;
