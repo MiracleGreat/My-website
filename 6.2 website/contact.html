@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Simon Skateboards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>
+                <a href="index.html" class="brand-name">
+                    <span class="green">SIMON</span> <span class="blue">skateboards</span>
+                </a>
+            </h1>
+            <div class="nav-search-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="new-collection.html">New Collection</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <a href="#" class="cart-icon">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <video autoplay muted loop class="hero-video">
+            <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/HJpjKMlmgiw923pte/videoblocks-close-up-legs-riding-on-skateboard-in-motion-of-asphalt-at-sunset-youth-leisure-concept-active-outdoor-sport-for-kids_hfoqupcrl__1104a543b733e0518ed2541f9a3d2b16__P360.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Get in touch with us for any queries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" onsubmit="resetForm(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> support@simonboards.com</p>
+                <p><strong>Phone:</strong> +44 123 456 7890</p>
+                <p><strong>Address:</strong> 123 Skate Street, London, UK</p>
+                <p><strong>Working Hours:</strong> Mon-Fri, 9 AM - 6 PM</p>
+                <div class="map-placeholder">
+                    <!-- Embed Google Map or Image -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?...YOUR-MAP-URL"
+                        width="100%"
+                        height="200"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Simon Skateboards</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Our Store</li>
+                    <li>Blog</li>
+                    <li>Site Map</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Customer Info</h4>
+                <ul>
+                    <li>Delivery</li>
+                    <li>Returns</li>
+                    <li>Cookie Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Features</h4>
+                <ul>
+                    <li>Best Sellers</li>
+                    <li>Shop The Sale</li>
+                    <li>Gift Vouchers</li>
+                    <li>Meet The Team</li>
+                    <li>Competitions</li>
+                </ul>
+            </div>
+            <div class="social">
+                <h4>Follow Us On Instagram</h4>
+                <img src="https://images.seeklogo.com/logo-png/30/2/instagram-logo-png_seeklogo-306290.png?v=638687102020000000" alt="Instagram">
+                <p>@SIMON SKATEBOARDS</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function resetForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Your message has been sent!"); // Optional: Confirmation alert
+            document.getElementById("contactForm").reset(); // Reset the form fields
+        }
+        </script>
+        
+</body>
+</html>
